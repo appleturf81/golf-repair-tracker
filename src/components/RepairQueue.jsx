@@ -302,7 +302,7 @@ export default function RepairQueue() {
                                                     <option value="Completed">Completed</option>
                                                 </select>
                                             ) : (
-                                                <span className={`px-3 py-1.5 text-sm font-bold rounded-md bg-white border border-gray-200 text-gray-600`}>
+                                                <span className="px-3 py-1.5 text-sm font-bold rounded-md bg-white border border-gray-200 text-gray-600">
                                                     {repair.status}
                                                 </span>
                                             )}
@@ -344,3 +344,4 @@ export default function RepairQueue() {
         </div>
             );
 }
+
