@@ -333,7 +333,7 @@ export default function RepairQueue() {
                                     </div>
                                 </div>
                             );
-                })}
+                        })}
 
                             {filteredRepairs.length === 0 && (
                                 <div className="text-center py-16 px-4 text-gray-500 bg-white rounded-xl border-2 border-dashed border-gray-200">
@@ -344,4 +344,5 @@ export default function RepairQueue() {
         </div>
             );
 }
+
 
