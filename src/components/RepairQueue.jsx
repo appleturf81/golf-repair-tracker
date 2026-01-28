@@ -332,7 +332,7 @@ export default function RepairQueue() {
                                         )}
                                     </div>
                                 </div>
-                            );
+                            )
                         })}
 
                             {filteredRepairs.length === 0 && (
@@ -344,5 +344,6 @@ export default function RepairQueue() {
         </div>
             );
 }
+
 
 
