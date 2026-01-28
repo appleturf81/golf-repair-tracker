@@ -327,23 +327,22 @@ export default function RepairQueue() {
                                         {repair.status === 'Completed' && repair.completedBy && (
                                             <div className="ml-auto text-xs text-gray-500 italic flex items-center gap-1">
                                                 <CheckCircle className="w-3 h-3 text-green-600" />
-                                                Fixed by {repair.completedBy} on {new Date(repair.dateCompleted).toLocaleDateString()}
+                     Fixed by {repair.completedBy} on {new Date(repair.dateCompleted).toLocaleDateString()}
                                             </div>
                                         )}
                                     </div>
                                 </div>
-                            )
-                        })}
-
-                            {filteredRepairs.length === 0 && (
-                                <div className="text-center py-16 px-4 text-gray-500 bg-white rounded-xl border-2 border-dashed border-gray-200">
-                                    <p>{activeTab === 'active' ? "Great job! No active repairs." : "No repair history found."}</p>
-                                </div>
                             )}
                         </div>
+                    );
+                })}
+
+                {filteredRepairs.length === 0 && (
+                    <div className="text-center py-16 px-4 text-gray-500 bg-white rounded-xl border-2 border-dashed border-gray-200">
+                        <p>{activeTab === 'active' ? "Great job! No active repairs." : "No repair history found."}</p>
+                    </div>
+                )}
+            </div>
         </div>
-            );
+    );
 }
-
-
-
